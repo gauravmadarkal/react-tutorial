@@ -4,6 +4,9 @@ import EnvSetup from '../../sections/react/EnvSetup';
 import ProjectStructure from '../../sections/react/ProjectStructure';
 import BuildingApp from '../../sections/react/BuildingApp';
 import FinishingApp from '../../sections/react/FinishingApp';
+import HomePreview from '../../assets/images/home.PNG';
+import ContactPreview from '../../assets/images/contact.PNG';
+import NextTutorial from '../../components/NextTutorial';
 
 const Home = () => {
 	return (
@@ -20,11 +23,16 @@ const Home = () => {
 			</ul>
 			<p>You might have not heard of couple of terms used above, worry not, we will go over all these concepts in the next steps.</p>
 			<p>Ok, that enough theory, lets jump into the code.</p>
-
+			<p>A preview of what you will be able to achieve at the end of this tutorial</p>
+			<div className='preview'>
+				<img src={HomePreview} alt='React tutorial Home page'/>
+				<img src={ContactPreview} alt='React tutorial Contact page'/>
+			</div>
 			<EnvSetup />
 			<ProjectStructure />
 			<BuildingApp />
 			<FinishingApp />
+			<NextTutorial to='/reactnative' title='React Native' />
 		</section>
 	);
 };

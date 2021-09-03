@@ -1,11 +1,20 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import ReactHome from './pages/reactHome';
+import Routes from './routes_config';
 
 function App() {
   return (
-	  <main>
-		<ReactHome />
-	  </main>
+	  <Router>
+		  <Switch>
+			  	{Routes.map(route => (
+				  	<Route path={route.path} exact>
+						<main>
+							{route.component}
+						</main>
+					</Route>
+			  	))}
+		  </Switch>
+	  </Router>
   );
 }
 

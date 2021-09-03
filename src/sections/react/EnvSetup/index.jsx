@@ -3,6 +3,7 @@ import { npm_npx_dets } from '../../../assets/constants';
 import CodeSnippet from '../../../components/CodeSnippet';
 import Points from '../../../components/Points';
 import Text from '../../../components/Text';
+import CRA_out from '../../../assets/images/cra-output.PNG';
 
 const EnvSetup = () => (
 	<section>
@@ -14,6 +15,7 @@ const EnvSetup = () => (
 		<Text>Replace the name 'personal-website' with whatever name you want to give to your application.</Text>
 		<Text>While the commands takes time to complete, lets see what it says.</Text>
 		<Points content={npm_npx_dets} />
+		<img src={CRA_out} alt='Create React App output' />
 		<Text>Your command should have exited by now, if not, then just wait for a few minutes.</Text>
 		<Text>Open the directory created with the name of your project, in this case 'personal-website'.</Text>
 		<Text>Launch VS Code and click on File - Open Folder (Select the react app folder that just got created).</Text>

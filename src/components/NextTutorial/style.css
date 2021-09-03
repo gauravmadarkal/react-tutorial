@@ -1,0 +1,12 @@
+.next_tutorial {
+	font-size: 2em;
+	color: var(--bg-color);
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+}
+
+.next {
+	width: 1em;
+	height: 1em;
+}
