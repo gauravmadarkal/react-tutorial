@@ -1,10 +1,29 @@
-.snippet {
+.code_wrapper {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.4em;
 	background-color: var(--bg-color);
+	width: fit-content;
+	margin: 1.5em 0;
+}
+.snippet {
 	color: var(--primary-color);
 	padding: 1em;
-	width: fit-content;
-	border-radius: 0.4em;
 	display: flex;
+	margin: 0;
+}
+
+.viewMore {
+	/* position: absolute; */
+	background-color: white;
+	opacity: 0.7;
+	width: 100%;
+	text-align: center;
+	padding: 0.5em;
+}
+.viewMore:hover {
+	opacity: 0.2;
+	cursor: pointer;
 }
 
 .copy {
