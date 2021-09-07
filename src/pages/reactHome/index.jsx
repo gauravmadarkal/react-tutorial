@@ -32,7 +32,7 @@ const Home = () => {
 			<ProjectStructure />
 			<BuildingApp />
 			<FinishingApp />
-			<NextTutorial to='/reactnative' title='React Native' />
+			<NextTutorial to='/mongo' title='Mongo DB' />
 		</section>
 	);
 };

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './style.css';
 
 const CodeSnippet = ({
-	code
+	code,
+	hideButton
 }) => {
 	const [copied, setCopied] = useState(false);
 	const [hideFull, setHideFull] = useState(false);
@@ -20,7 +21,7 @@ const CodeSnippet = ({
 	return(
 	<div className='code_wrapper'>
 		<pre className='snippet'>
-			{hideFull? getPartialContent(code) : code}
+			{(hideFull && !hideButton) ? getPartialContent(code) : code}
 			<div 
 				className='copy'
 				role='button'
@@ -33,7 +34,7 @@ const CodeSnippet = ({
 				{copied ? 'copied' : 'copy'}
 			</div>
 		</pre>
-		{hideFull && <div className='viewMore' role='button' tabIndex={0} onClick={() => setHideFull(false)}>View More</div>}
+		{hideFull && !hideButton && <div className='viewMore' role='button' tabIndex={0} onClick={() => setHideFull(false)}>View More</div>}
 	</div>)
 };
 

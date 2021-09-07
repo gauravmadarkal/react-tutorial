@@ -10,3 +10,12 @@
 	width: 1em;
 	height: 1em;
 }
+
+.back {
+	justify-content: flex-start;
+	margin-top: 2em;
+}
+
+.rota {
+	transform: rotate(180deg);
+}
