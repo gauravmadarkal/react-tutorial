@@ -3,7 +3,6 @@ import Text from '../../components/Text';
 import localConnect from '../../assets/images/mongo/compass_connection.PNG';
 import connectionDetails from '../../assets/images/mongo/connection_details.PNG';
 import JSONData from '../../assets/images/mongo/json_data.PNG';
-import MongoSetup from '../../assets/images/mongo/setup.PNG';
 import BoldItalicize from '../../components/BoldItalicize';
 import CodeSnippet from '../../components/CodeSnippet';
 import Points from '../../components/Points';
