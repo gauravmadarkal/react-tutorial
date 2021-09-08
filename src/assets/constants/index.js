@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-escape */
+
 export const snippet_1 = `
 export const routes = [
     {

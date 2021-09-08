@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-escape */
+
 export const packageJson = `
 // -----root level package.json----- //
 

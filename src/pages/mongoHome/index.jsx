@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import React from 'react';
 import Text from '../../components/Text';
 import localConnect from '../../assets/images/mongo/compass_connection.PNG';
