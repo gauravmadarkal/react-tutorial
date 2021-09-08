@@ -1,0 +1,7 @@
+.link_txt {
+	text-decoration: underline;
+	color: blue;
+}
+.link_txt:hover {
+	cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import ReactHome from './pages/reactHome';
 import ReactNativeHome from './pages/reactNativeHome';
 import MongoHome from './pages/mongoHome';
+import NodeHome from './pages/nodeHome';
 
 const Routes = [
 	{
@@ -17,6 +18,11 @@ const Routes = [
 		name: 'Mongo Home',
 		path: '/mongo',
 		component: <MongoHome />
+	},
+	{
+		name: 'Node Home',
+		path: '/node',
+		component: <NodeHome />
 	}
 ];
 

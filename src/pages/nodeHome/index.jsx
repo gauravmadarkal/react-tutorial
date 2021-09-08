@@ -1,8 +1,9 @@
 import React from 'react';
+import IntegrationMongoose from '../../sections/node/IntegrationMongoose';
 
 const NodeHome = () => {
 	return (
-		<h1>This is Node js tutorial</h1>
+		<IntegrationMongoose />
 	)
 };
 

@@ -448,3 +448,25 @@ export const concepts_of_contact = [
 		inline function, and we are doing certain tasks in that function. we are spreadind the existing state object and modifying only the respective field and passing that result to setState function.`,
 	`The input value that you get to see in your browser is coming from the value prop for Input component. Whenever you type something, the onCHange is called, which modifies the state value and which in turn rerenders the page causing the value to get updated in the UI.`
 ];
+
+export const mongo_connection = `
+const mongodb = 'mongodb://localhost:27017/myprofile';
+mongoose.connect(mongodb, {useNewUrlParser: true, useUnifiedTopology: true});
+const db = mongoose.connection;
+db.on('error',() => console.error('db error'));
+`;
+
+export const contacts_model = `
+import mongoose from 'mongoose';
+
+const Schema = mongoose.Schema;
+
+const Contacts = new Schema({
+  name: String,
+  email: Date,
+  message: String
+}, { collection: 'potentialContacts' });
+
+// Compile model from schema
+const ContactsModel = mongoose.model('potentialContacts', Contacts);
+export default ContactsModel;`
