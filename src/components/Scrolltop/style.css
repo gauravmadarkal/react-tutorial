@@ -1,0 +1,22 @@
+.scroller {
+	/* position: absolute; */
+	right: 0;
+	bottom: 0;
+	width: 4em;
+	height: 4em;
+	margin-top: -10%;
+	background-color: white;
+	border-radius: 2em;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-left: 102%;
+}
+.scroller:hover {
+	cursor: pointer;
+}
+.icon {
+	width: 2em;
+	height: 2em;
+	transform: rotate(-90deg);
+}

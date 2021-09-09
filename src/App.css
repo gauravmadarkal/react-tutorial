@@ -15,11 +15,15 @@ body {
 	margin: 0 auto;
 }
 
-main {
+.container {
 	margin: 5em 0;
 	padding: 2em;
 	background-color: var(--primary-color);
 	border-radius: 0.2em;
+}
+.footer {
+	text-align: center;
+	color: var(--primary-color);
 }
 
 h1 {
@@ -42,6 +46,9 @@ h3 {
 }
 .txt-cen {
 	text-align: center;
+}
+.txt-invert {
+	color: var(--primary-color);
 }
 
 .section-header {

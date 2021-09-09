@@ -69,7 +69,7 @@ const IntegrationMongoose = () => {
 			<CodeSnippet code='localhost:8000/api/data/contacts' />
 			<Text>Lets create another API to create a contact entry that we can later integrate with our react application</Text>
 			<CodeSnippet code={contactCreation} />
-			<Text>Download and install Postman if you don't alreay have it</Text>
+			<Text>Download and install Postman if you don't already have it</Text>
 			<Text>Create a new Post request and hit the localhost:8000/api/data/contacts url</Text>
 			<img src={PostmanReq} alt='Postman request' />
 			<Text>That is all you need to do to create a backend server and integrate it with your data store which in this case is mongodb</Text>

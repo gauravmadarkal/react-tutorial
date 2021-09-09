@@ -6,7 +6,7 @@ import BuildingApp from '../../sections/react/BuildingApp';
 import FinishingApp from '../../sections/react/FinishingApp';
 import HomePreview from '../../assets/images/home.PNG';
 import ContactPreview from '../../assets/images/contact.PNG';
-// import NextTutorial from '../../components/NextTutorial';
+import NextTutorial from '../../components/NextTutorial';
 
 const Home = () => {
 	return (
@@ -32,7 +32,7 @@ const Home = () => {
 			<ProjectStructure />
 			<BuildingApp />
 			<FinishingApp />
-			{/* <NextTutorial to='/mongo' title='Mongo DB' /> */}
+			<NextTutorial to='/mongo' title='Mongo DB' />
 		</section>
 	);
 };

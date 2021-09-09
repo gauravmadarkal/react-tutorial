@@ -7,7 +7,7 @@ import JSONData from '../../assets/images/mongo/json_data.PNG';
 import BoldItalicize from '../../components/BoldItalicize';
 import CodeSnippet from '../../components/CodeSnippet';
 import Points from '../../components/Points';
-// import NextTutorial from '../../components/NextTutorial';
+import NextTutorial from '../../components/NextTutorial';
 
 
 const MongoHome = () => {
@@ -203,7 +203,8 @@ const MongoHome = () => {
             <img src={connectionDetails} alt='Connection Details' />
             <h1 className='txt-cen'>That brings us to the end of the mongodb tutorial.</h1>
             For more info head over to <a href='https://docs.mongodb.com/'>MongoDb Docs</a>
-            {/* <NextTutorial back title='React Tutorial' to='/' /> */}
+            <NextTutorial back title='React Tutorial' to='/' />
+            <NextTutorial title='Node Tutorial' to='/node' />
         </section>
     )
 };
