@@ -7,7 +7,7 @@ const NodeHome = () => {
 		<section>
 			<IntegrationMongoose />
 			<NextTutorial back title='Mongodb Tutorial' to='/mongo' />
-			<NextTutorial title='React Native Tutorial Coming soon' to='#' />
+			<NextTutorial title='React Native' to='/reactnative' />
 		</section>
 	)
 };
