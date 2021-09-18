@@ -7,9 +7,9 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="This is a quick basics tutorial on React, React Native, Mongo DB and Node.js"
+      content="This is a quick basics tutorial on React, React Native, Mongo DB and Node.js developed by Gaurav Madarkal"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -39,5 +39,35 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[])
+		.push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+		a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script',
+		'https://www.google-analytics.com/analytics.js','ga');
+		const optOutGA = localStorage.getItem('c_opt_out');
+		if (optOutGA == 1) {
+			ga('create', 'G-SKM33TR8KV', {
+				'storage': 'none',
+				'storeGac': false
+			})
+		} else {
+			ga('create', 'G-SKM33TR8KV', 'auto');
+			ga('send', 'pageview');
+		}
+	  </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SKM33TR8KV"></script>
+	<script>
+		const optOutGT = localStorage.getItem('c_opt_out');
+		if (optOutGT == 1) {
+		}
+		else {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-SKM33TR8KV');
+		}
+	</script>
   </body>
 </html>
