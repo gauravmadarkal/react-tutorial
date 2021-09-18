@@ -12,7 +12,7 @@ const Home = () => {
 	return (
 		<section>
 			<h1 class="txt-cen">Tutorial on React</h1>
-			<h2>What is react?</h2>
+			<h2>What is React?</h2>
 			<p class="txt">React is a javascript library to build UI.</p>
 
 			<h2>Advantages of using React</h2>
