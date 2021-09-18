@@ -1,8 +1,13 @@
 import React from 'react';
+import BuildingScreens from '../../sections/reactNative/BuildingScreens';
+import StartingWithReactNative from '../../sections/reactNative/StartingWithReactNative';
 
 const ReactNativeHome = () => {
 	return (
-		<h1>This is react native tutorial</h1>
+		<section>
+			<StartingWithReactNative />
+			<BuildingScreens />
+		</section>
 	)
 };
 
