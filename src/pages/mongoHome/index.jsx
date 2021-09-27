@@ -16,29 +16,37 @@ const MongoHome = () => {
             <h1 className='txt-cen'>Tutorial on MongoDB</h1>
             <Text>In this tutorial we'll go over setting up mongodb local environment and some basic queries and data creation/manipulation/deletion (DCL, DML, DDL) operations</Text>
             <Text><h3>NoSQl vs SQL</h3></Text>
-            <Text>Each has its own Advantages and disadvantages, NOSQL has no structure to the data, 
-                if your schema design does not contain a specific structure or relationship between entities then NOSQL is the best option.</Text>
-            <Text>But if you want to maintain a relationship between entities then SQL is the best option.</Text>
+            <Text>Each one has its own advantages and disadvantages, NOSQL has no structure to the data, 
+                if your schema design does not contain a specific structure or relationship between entities then NOSQL is the option to consider.</Text>
+            <Text>But if you want to maintain a relationship between entities then SQL is the way to go</Text>
             <Text><BoldItalicize>What do we mean by a relationship?</BoldItalicize></Text>
             <h3>Example</h3>
             <CodeSnippet 
-                code={`Let consider a prison database, A prison is a entity, a prisoner is an entity, a cell is an entity. \n A relationship between these entities can be listed as follows. \n A prison has many prisoners, a cell has one prisoner, a prison has many cells etc..`} 
+                code={`Let us consider a prison database, A prison, a Prisoner, A cell are all entities. \n A relationship between these entities can be listed as follows. \n A prison has many prisoners, a cell has one prisoner, a prison has many cells etc..`} 
                 hideButton  
             />
             <Text>"has many", "has one" are called as relationships.</Text>
-            <Text>If you want to store data in a structure less format then NOSQL will come into picture, lets take an example and define it in SQL and NOSQL
-            in case on a Prisoner entity, in case of SQL</Text>
-            <Text>You write the prisoner entity as follows, should have an primary key or an identifier unique to him, name, age, DOB etc.. are a must.</Text>
-            <Text>Then you want to insert a prisoner without a DOB, you will not be able to because according to the schema they are compulsory.</Text>
-            <Text>Also, if for a specific prisoner a new detail needs to be added then its not possible, you need to add it to all other prisoners as a NULL value.</Text>
+            <Text>If you want to the store data in a structure less format then NOSQL will come into picture, let's take an example and define it in SQL and NOSQL.</Text>
+            <Text>You write the prisoner entity as follows, </Text>
+			<Points content={[
+				'Should have an primary key or an identifier unique to the prisoner', 
+				'name', 
+				'age', 
+				'DOB'
+			]} />
+			<Text>Suppose this is the structure you created for the prisoner entity, 
+				if in 90% the entries to prisoner entity you did not want to enter the DOB, 
+				you still need to add a column to the table in case of SQL. 
+				But in case of NOSQL since there is no structure each entry is an independent record. 
+				One prisoner can have a DOB and name, one of them can have one name etc..</Text>
             <Text>Thats the primary difference between NOSQL and SQL.</Text>
-            <Text>Nows dive into NOSQL and explore how to use it.</Text>
+            <Text>Now lets dive into NOSQL and explore how to use it.</Text>
             <Text>Head over to MongoDB downloads pages, and download the server based on your platform</Text>
             <a href='https://www.mongodb.com/try/download/community' target='_blank' rel='noreferrer'>Mongodb Downloads</a>
             <Text><BoldItalicize>For windows</BoldItalicize></Text>
-            <Text>Download the msi installer which will take a few minutes to download, once that is done, click on the msi file and follow the steps.</Text>
+            <Text>Download the msi installer, which will take a few minutes to download, once that is done, click on the msi file and follow the steps.</Text>
             <Text>Install the complete tool, and follow all default steps. 
-                Lastly, there is a checkbox to install mongocompass, do not uncheck that box. We'll go over what is mongocompass later in this tutorial</Text>
+                Lastly, there is a checkbox to install mongocompass, do not uncheck that box. We'll go over what is the use of mongocompass later in this tutorial</Text>
             <Text>Wait for a couple of minutes for the installer to finish.</Text>
 
             <Text><BoldItalicize>For Mac users</BoldItalicize></Text>,
