@@ -13,8 +13,8 @@ const IntegrationMongoose = () => {
 	return (
 		<section>
 			<h2 className='txt-cen'>Integrating Mongodb with our Node backend server application</h2>
-			<Text>A <BoldItalicize>server</BoldItalicize> is basically an application that get data from your database and sends it to your frontend application</Text>
-			<Text>All the complex tasks should be performed on our backend server and not on the frontend javscript engine</Text>
+			<Text>A <BoldItalicize>server</BoldItalicize> is basically an application that gets data from your database and sends it to your frontend application</Text>
+			<Text>All the complex/time consuming tasks should be performed on your backend server and not on the frontend application</Text>
 			<Text>Let's connect the database that we just created to the node application</Text>
 			<Text>Before that lets setup some starter code for our node application</Text>
 			<Text>This tutorial here assumes you have some prior knowledge of node. If you have not worked with node its totally fine, there are some very straight forward steps.</Text>
